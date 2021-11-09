@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div class="content">
+            <div class="row cols-2 mb-5">
+                <div class="col-xxl-8 col-xl-6 col-md-12 col-sm-12 align">
+                    <h2 class="mb-3">Контакти</h2>
+                    <div>
+                        <div class="row align-content-center justify-content-between mb-3">
+                            <div class="col-xl-3 col-md-3">
+                                <img class="avatar" src="{{ url_for('static', filename='avatar.jpg') }}">
+                            </div>
+                            <div class="col-xl-9 col-md-9">
+                                <h3>Тетяна</h3>
+                                <p>Режисер театру</br>+380682424875, nopalko19@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row align-content-center justify-content-between mb-3">
+                            <div class="col-xl-3 col-md-3">
+                                <img class="avatar" src="{{ url_for('static', filename='avatar.jpg') }}">
+                            </div>
+                            <div class="col-xl-9 col-md-9">
+                                <h3>Тетяна</h3>
+                                <p>Режисер театру</br>+380682424875, nopalko19@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row align-content-center justify-content-between mb-3">
+                            <div class="col-xl-3 col-md-3">
+                                <img class="avatar" src="{{ url_for('static', filename='avatar.jpg') }}">
+                            </div>
+                            <div class="col-xl-9 col-md-9">
+                                <h3>Тетяна</h3>
+                                <p>Режисер театру</br>+380682424875, nopalko19@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-6 col-md-12 col-sm-12 bg-white radius">
+                    <h2 class="mb-3">Де нас шукати?</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.8754407653946!2d30.748787437202566!3d46.47097516352353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63170a9c4c039%3A0x81b41f18c78f397a!2z0JrQsNC90LDRgtC90YvQuSDQv9C10YAuLCA2LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1635454639345!5m2!1sru!2sua" style="border:0; width: 100%; height: 80%;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="row cols-2 justify-content-between mt-15">
+                <div class="col-xxl-8 col-xl-6 col-md-12 col-sm-12">
+                    <h2 class="mb-3">Ардеса</h2>
+                    <ul style="font-size: 34px;">
+                        <li>
+                            вулиця Пантелеймонівська, 3, Одеса, Одеська область, 65012
+                        </li>
+                        <li>
+                            +380 68 242 4875 WhatsApp, Telegram
+                        </li>
+                        <li>
+                            +380 68 242 4875
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-4 col-xl-6 col-md-12 col-sm-12 bg-white radius p-3">
+                    <h2 class="mb-3">Зв’яжіться з нами</h2>
+                    <form action="{{ url_for('contact') }}" method="post">
+                        <div class="row justify-content-between g-5 mb-3">
+                            <div class="col-4">
+                                <input type="text" class="form-control border-none" placeholder="Ваше ім'я" name="name" id="name">
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control border-none" placeholder="E-mail" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="text-end mb-3">
+                            <textarea class="form-control border-none mb-5" placeholder="Повідомлення" style="height: 200px" name="message" id="message"></textarea>
+                            <a class="btns bg-dark-violet">
+                                <input type="submit" class="bg-dark-violet border-0" value="Отправить">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

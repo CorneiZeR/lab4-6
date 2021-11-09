@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div class="content d-flex justify-content-between">
+            <div class="col-md-6 col-sm-12 center align-content-center flex-column text-centered d-none d-md-block d-lg-block d-xl-block">
+                <object class="img-fluid" style="max-width: 750px;" data="{{ url_for('static', filename='Шок!.svg')}}"></object>
+                <h1>Це що театр де руйнуэться 4 стіна?</h1>
+            </div>
+            <div class="col-md-6 d-none d-md-block d-lg-block d-xl-block" >
+                <object data="{{ url_for('static', filename='Actor.svg')}}" style="object-fit: cover; width: 100%;"></object>
+            </div>
+    </div>
+
+        <!-- <img src="{{ url_for('static', filename='img1.png') }}" class="img-fluid d-block d-sm-none" alt="..."> -->
+
+        <div class="d-flex align-items-center sec1 mt-15">
+            <div class="content col-xl-4 col-md-12 col-sm-12">
+                <object class="img-fluid w-75 h-50 mb-5" data="{{ url_for('static', filename='SHOCKSPEARE.svg') }}"></object>
+                <p>
+                    це інтерактивний театр, де ви опиняєтесь у гущі подій. Вистави сконструйовані таким чином, щоб глядач був повністю включений в процес, мав свободу дії і при цьому не міг нічого зруйнувати. Для створення таких вистав залучаються гейм-дизайнери, які створюють систему, що дозволяє виконати ці три умови. Разом ми створюємо безпечний простір для унікального емоційного досвіду.
+                </p>
+            </div>
+        </div>
+
+        <img src="{{ url_for('static', filename='img2.png') }}" class="img-fluid d-block d-sm-none" alt="...">
+
+        <div class="d-flex align-items-center sec2 mt-15">
+            <div class="content row cols-2 justify-content-end">
+                <div class="col-xl-4 col-md-12 col-sm-12">
+                    <p class="text-start">
+                        У класичному театрі є термін «четверта стіна». Актор, який грає на сцені, повинен звести для себе четверту, ілюзорну, стіну, невидиму межу між собою і глядачем. Вона повинна бути непроникна для обох сторін: для акторів за нею нікого не повинно бути, а глядачі повинні бачити тільки те, що їм показано на сцені, як ніби за лаштунками нічого не існує. Цей термін з'явився разом з формуванням театру в звичному для нас вигляді: монументальна споруда, завісу з важкої тканини, крісла в залі для глядачів і магія на сцені. Глядачеві залишалося тільки спостерігати за тим, що відбувається на сакральному просторі, куди допускаються тільки актори. 
+                    </p>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12">
+                    <p class="text-start">
+                        У пошуках нової форми комунікації з глядачами «четверту стіну» стали руйнувати. Глядачів включали в процес коротким зверненням зі сцени, потім актори стали спускатися в зал і взаємодіяти з підсадними гостями. Взаємодія з реальним глядачем здавалося занадто ризикованим і непередбачуваним дією. В спектакль вносився фактор «х». Найголовніше, що глядач отримує на такому спектаклі - це емоційний опит.Он виявляється в таких обставинах, де може пережити незвичні і складні ситуації. Безумовно, це все гра, але досвід переживання, розкриття себе з несподіваного боку все равносохраняется. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="{{ url_for('static', filename='avatar.jpg') }}" class="img-fluid d-block d-sm-none" alt="...">
+
+        <div class="content row cols-2 mt-15">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <p>
+                    «У людини є художнє сприйняття», - розповідає головний режисер ТЖД Анастасія Кірєєва. «Коли ти читаєш книгу, ти можеш просто читати сюжет, а можеш зчитувати образи, закладені автором. Це навик, і він розвивається, якщо людина ходить в музеї і театри, слухає музику, читає книги. У нього набирається певна палітра, його особистий набір якорів, за які чіпляється то, що він бачить. І мені здається, що інтерактивний театр дуже здорово розвиває художнє сприйняття, тому що ти не просто дивишся на якісь речі, ти бачиш, як все влаштовано всередині. Це як потрапити всередину картини, розумієте? Але у нас ти не тільки всередині неї, ти береш участь в її створенні».
+                </p>
+                <div class="row cols-2 justify-content-between">
+                    <a class="col-md-3 col-sm-12 mt-3 btns" href="#">
+                        Розклад
+                    </a>
+                    <a class="col-md-3 col-sm-12 mt-3 btns bg-gradient" href="#">
+                        Контакти
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 d-none d-lg-block d-xl-block text-center">
+                <img height="350hv" width="350wh" class="rounded-circle" src="{{ url_for('static', filename='avatar.jpg') }}">
+            </div>
+        </div>
+{% endblock %}
